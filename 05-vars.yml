@@ -1,5 +1,5 @@
 - name : variables
-  hosts : inventory.ini
+  hosts : local
   connection : local
   tasks :
     - name : print the variables
