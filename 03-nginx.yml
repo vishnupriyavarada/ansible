@@ -1,0 +1,13 @@
+- name : Install and Run nginx
+  hosts: web
+  become: yes # -b . giving sudo access
+  tasks:
+  - name : install nginx
+    ansible.builtin.package: #  ansible.builtin.dnf command is also there but dnf can be used only for redhat. it will not work for ubuntu
+                             #  and other distros. To make it hetrogenous we can use package instead of dnf
+      name : nginx
+      state : present
+  - name : start the nginx service
+    ansible.builtin.service:
+      name : nginx
+      state : started
