@@ -1,0 +1,8 @@
+- name : variables
+  hosts : inventory.ini
+  connection : local
+  tasks :
+    - name : print the variables
+      ansible.builtin.debug:
+       msg : "Course is DevOps with AWS. Duration is 120 hrs"
+  
