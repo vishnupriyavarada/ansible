@@ -7,7 +7,8 @@
     TRAINER : Sivakumar
   tasks :
     - name : print the variables
-      vars : Ansible # TASK level Variables
+      vars :  # TASK level Variables
+        COURSE : Ansible
       ansible.builtin.debug:
        msg : "Course is {{COURSE}}. Duration is {{DURATION}}. Trainer is {{ TRAINER}}"
   
