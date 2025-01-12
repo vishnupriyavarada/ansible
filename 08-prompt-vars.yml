@@ -1,7 +1,7 @@
 - name : print variables from prompt
   hosts : local
   connection : local
-  vars : # variables from prompt
+  vars_prompt : # variables from prompt
     - name : COURSE
       prompt : Please enter the course name
       private : false
