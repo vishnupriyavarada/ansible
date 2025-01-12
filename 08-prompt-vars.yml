@@ -12,6 +12,6 @@
       prompt : Please entertrainer name
       private : false
   tasks :
-    - name : print course information through prompt
-      ansible.builtin.debug:
+  - name : print course information through prompt
+    ansible.builtin.debug:
       msg :  "Course is {{COURSE}}. Duration is {{DURATION}}. Trainer is {{ TRAINER}}"
