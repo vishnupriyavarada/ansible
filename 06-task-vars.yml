@@ -6,9 +6,13 @@
     DURATION : 120HRS
     TRAINER : Sivakumar
   tasks :
-    - name : print the variables
+    - name : print the task1 variables
       vars :  # TASK level Variables
         COURSE : Ansible
+      ansible.builtin.debug:
+       msg : "Course is {{COURSE}}. Duration is {{DURATION}}. Trainer is {{ TRAINER}}"
+    
+    - name : print the task2 variables
       ansible.builtin.debug:
        msg : "Course is {{COURSE}}. Duration is {{DURATION}}. Trainer is {{ TRAINER}}"
   
