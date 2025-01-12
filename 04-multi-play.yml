@@ -1,5 +1,5 @@
 - name : PLAY1
-  host : local
+  hosts : local
   connection : local # managing its own node. No need of credentials (ssh username and ssh password)
   tasks :
   - name : PLAY1 and TASK1
@@ -7,7 +7,7 @@
       msg : "Hello from play1 and task1"
 
 - name : PLAY2
-  host : local
+  hosts : local
   connection : local # managing its own node. No need of credentials (ssh username and ssh password)
   tasks :
   - name : PLAY2 and TASK2
