@@ -9,6 +9,7 @@
     - name : print the task1 variables
       vars :  # TASK level Variables. Accessible only in the task. Task variables/local variables override Play / global variables
         COURSE : Ansible
+        DURATION : 10HRS
       ansible.builtin.debug:
        msg : "Course is {{COURSE}}. Duration is {{DURATION}}. Trainer is {{ TRAINER}}"
     
