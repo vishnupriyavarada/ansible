@@ -1,5 +1,5 @@
 - name : Print variables from inventory
-  host : local
+  hosts : local
   connection : local
   tasks :
   - name : task1-print variables from inventory
