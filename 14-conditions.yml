@@ -1,6 +1,6 @@
 - name : check the value is greater than 10 or not
   hosts : local
-  connections : local
+  connection : local
   vars:
     my_number : 15
   tasks :
