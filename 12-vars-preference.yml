@@ -1,0 +1,9 @@
+- name : "Variables preferences"
+  hosts : local
+  connection : local
+  vars :
+    GREET : "Var from Play"
+  tasks :
+  - name : "task 1 - Variables preferences"
+    ansible.builtin.debug :
+      msg : "{{ GREET }}"
