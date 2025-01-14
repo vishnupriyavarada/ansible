@@ -1,0 +1,7 @@
+- name : "Print vars from inventory"
+  hosts : web
+  # connection : localhost
+  tasks :
+  - name : task1-Print vars from inventory
+    ansible.builtin.debug :
+      msg : "Course is {{ COURSE}}. Duration is {{ DURATION}}. Speaker is {{ SPEAKER }}"
