@@ -1,0 +1,20 @@
+- name : DevOps course information
+  local : local
+  connection : local
+  vars :
+    course_name :  "DevOps with AWS" #string
+    duration : 120 # number
+    topics : # list. Anything starting with hypen (-) is a list
+      - Linux
+      - Shell scripting
+      - configuration management
+      - AWS
+    live : true  # boolean
+    tools : # dictionary or map. map hass key value pairs.
+      ci: jenkins
+      cloud : AWS
+      containerization : docker
+  tasks :
+    - name : "task1- print datatypes"
+      ansible.builtin.debug :
+        msg : "Hi am learning {{course_name}} and the duration is {{duration}}}. The topics are {{ topics}} is it {{ live }}. Tools covered are {{ tools }}"
