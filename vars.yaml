@@ -1,3 +1,5 @@
-COURSE : "DevOps with AWS"
-DURATION : 120HRS
-TRAINER : Sivakumar
+# COURSE : "DevOps with AWS"
+# DURATION : 120HRS
+# TRAINER : Sivakumar
+
+GREET : "Files"
