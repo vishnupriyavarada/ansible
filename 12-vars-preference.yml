@@ -17,6 +17,7 @@
       msg : "Hello from {{ GREET }}"
 
 
+# Preference/Order of variable level
 
   # 1) Command line or Args
   # 2) Task
@@ -24,4 +25,5 @@
   # 4) prompt
   # 5) PLAY
   # 6) Inventory
+  # 7) Roles
 
