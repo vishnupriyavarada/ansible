@@ -4,7 +4,7 @@
   vars :
     GREET : "PLAY"
   vars_files :
-    - vars.yaml
+  - vars.yaml
   vars_prompt :
   - name : GREET
     prompt : enter the value
@@ -20,3 +20,4 @@
 
   # 1) Command line or Args
   # 2) Task
+
