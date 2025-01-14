@@ -5,10 +5,10 @@
     GREET : "PLAY"
   # vars_files :
   # - vars.yaml
-  vars_prompt :
-  - name : GREET
-    prompt : enter the value
-    private : false
+  # vars_prompt :
+  # - name : GREET
+  #   prompt : enter the value
+  #   private : false
   tasks :
   - name : "task 1 - Variables preferences"
     # vars : 
@@ -21,4 +21,5 @@
   # 1) Command line or Args
   # 2) Task
   # 3) Files
+  # 4) prompt
 
