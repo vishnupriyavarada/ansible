@@ -10,5 +10,5 @@
     - { name : 'gcc', state : 'present' }
     - { name : 'mysql', state : 'absent'}
     - { name : 'git' , state : 'present'}
-    - { name : 'zip' , state : 'present'}
-    - { name : 'nginx' , state : 'absent'}
+    - { name : 'zip' , state : 'absent'}
+    - { name : 'nginx' , state : 'present'}
