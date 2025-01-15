@@ -2,13 +2,13 @@
   hosts : web
   become : yes
   tasks :
-  - name : install ngix if RHEL
+  - name : install nginx if RHEL
     ansible.builtin.dnf:
       name : nginx
       state : installed
     when : anisble_os_family == "RedHat"
-    
-  - name : install ngix if Ubuntu
+
+  - name : install nginx if Ubuntu
     ansible.builtin.apt:
       name : nginx
       state : installed
