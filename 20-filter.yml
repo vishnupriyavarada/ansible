@@ -20,3 +20,12 @@
         SPEAKER : Sivakumar
     ansible.builtin.debug:
       msg : "Course details in list format : {{ COURSE | dict2items }}"
+  
+  - name : task4 - convert list to map/dictonary
+    vars :
+      COURSE :
+      - {'key': 'COURSE_NAME', 'value': 'DevOps'}
+      - {'key': 'DURATION', 'value': '120HRS'}
+      - {'key': 'SPEAKER', 'value': 'Sivakumar'}
+    ansible.builtin.debug:
+      msg : "Course details in dictonary format : {{ COURSE | items2dict }}"
