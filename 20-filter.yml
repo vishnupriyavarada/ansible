@@ -34,4 +34,4 @@
     vars :
       NAME : 'Vishnu Priya Varada'
     ansible.builtin.debug:
-      msg : " Name in lower format : {{ NAME | lower }} "
+      msg : " Name in lower format : {{ NAME | upper }} "
