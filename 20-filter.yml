@@ -12,4 +12,11 @@
     ansible.builtin.debug:
       msg : "Fruits are : {{ FRUITS | ansible.builtin.split(',') }}"
     
-    
+  - name : task3 - convert map/dictonary into list
+    vars :
+      COURSE :
+        COURSE_NAME : DevOps
+        DURATION : 120HRS
+        SPEAKER : Sivakumar
+    ansible.builtin.debug
+      msg : "Course details in list format : {{ COURSE | dict2items }}"
