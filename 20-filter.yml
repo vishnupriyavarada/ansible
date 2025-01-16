@@ -50,6 +50,6 @@
 
   - name : task8 - Check IP address is valid or not
     vars :
-      IP_ADDRESS : 2344.567.8907.678
+      IP_ADDRESS : 215.10.0.0
     ansible.builtin.debug:
       msg : " Is IP address is valid ? {{ IP_ADDRESS | ansible.utils.ipaddr }}"
