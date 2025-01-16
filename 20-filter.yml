@@ -36,8 +36,14 @@
     ansible.builtin.debug:
       msg : " Name in lower format : {{ NAME | lower }} "
 
-  - name : task5 - Convert lower to upper
+  - name : task6 - Convert lower to upper
     vars :
       NAME : 'Vishnu Priya Varada'
     ansible.builtin.debug:
       msg : " Name in lower format : {{ NAME | upper }} "
+
+  - name : task7 - print min and max number
+    vars :
+      NUMBERS : [23,89, 14, 3, 1978, 4567]
+    ansible.builtin.debug:
+      msg : " Minimum number is : {{ NUMBERS | min }} and Maximum number is : {{ NUMBERS | max }} "
