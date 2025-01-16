@@ -29,3 +29,9 @@
       - {'key': 'SPEAKER', 'value': 'Sivakumar'}
     ansible.builtin.debug:
       msg : "Course details in dictonary format : {{ COURSE | items2dict }}"
+
+  - name : task5 - Convert upper to lower
+    vars :
+      NAME : 'Vishnu Priya Varada'
+    ansible.builtin.debug:
+      msg : " Name in lower format : {{ NAME | lower }} "
