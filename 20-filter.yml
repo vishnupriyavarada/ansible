@@ -34,4 +34,10 @@
     vars :
       NAME : 'Vishnu Priya Varada'
     ansible.builtin.debug:
+      msg : " Name in lower format : {{ NAME | lower }} "
+
+  - name : task5 - Convert lower to upper
+    vars :
+      NAME : 'Vishnu Priya Varada'
+    ansible.builtin.debug:
       msg : " Name in lower format : {{ NAME | upper }} "
