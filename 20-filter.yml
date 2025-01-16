@@ -2,6 +2,14 @@
   hosts : local
   connection : local
   tasks :
-  - name : task1-undefined variables
+  - name : task1-Handling undefined variables
     ansible.builtin.debug:
       msg : "Hello {{ PERSON | default('Krishna') }}"
+  
+  - name : task2 - string to list
+    vars:
+      FRUITS : "Apple, Banana, Grapes, Orange"
+    ansible.builtin.debug:
+      msg : "{{ FRUITS | split(',')}}"
+    
+    
