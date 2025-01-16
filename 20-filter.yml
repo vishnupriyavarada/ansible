@@ -18,5 +18,5 @@
         COURSE_NAME : DevOps
         DURATION : 120HRS
         SPEAKER : Sivakumar
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg : "Course details in list format : {{ COURSE | dict2items }}"
