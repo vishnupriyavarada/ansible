@@ -8,7 +8,7 @@
   
   - name : task2 - string to list
     vars:
-      FRUITS : "Apple, Banana, Grapes, Orange"
+      FRUITS : "Apple,Banana,Grapes,Orange"
     ansible.builtin.split:
       msg : "Fruits are : {{ FRUITS | split(',')}}"
     
